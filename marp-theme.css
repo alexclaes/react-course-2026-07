@@ -1,0 +1,88 @@
+/* @theme course */
+
+/*
+ * Shared Marp theme for all React course slide decks.
+ * Inherits the stock Marp "default" theme and adds layout classes.
+ * Registered in .vscode/settings.json and .marprc.yml.
+ */
+
+@import 'default';
+
+section.columns .columns-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+section.columns.tech .columns-wrap {
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+}
+
+section.columns.tech .logo-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.columns.tech .logo-col p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.columns.tech .logo-col img {
+  display: block;
+  max-width: 280px;
+  max-height: 260px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+section.image {
+  justify-content: center;
+  text-align: center;
+}
+
+section.image img {
+  display: block;
+  margin: auto;
+  max-height: 70vh;
+}
+
+section.image-headline {
+  text-align: left;
+}
+
+section.image-headline img {
+  display: block;
+  margin: 1rem auto 0;
+  max-height: calc(720px - 157px - 4rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+section.image-fit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section.image-fit p {
+  margin: 0;
+}
+
+section.image-fit img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: calc(720px - 157px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
